@@ -91,9 +91,9 @@ app.get('/api/persons', (request, response) => {
   response.json(persons)
 })
 
-// app.get('/', (request, response) => {
-//   response.json('go to http://localhost:3001/api/persons')
-// })
+app.get('/', (request, response) => {
+  response.json(persons)
+})
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
